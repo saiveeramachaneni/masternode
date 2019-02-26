@@ -47,7 +47,9 @@ EOF
   systemctl start delion.service
 }
 
-echo "Do you want to install all needed dependencies (no if you did it before)? [y/n]"
+echo ""
+echo ""
+echo "{GREEN}Do you want to install all needed dependencies (no if you did it before)? [y/n]{NC}"
 read DOSETUP
 
 if [ $DOSETUP = "y" ]  
@@ -112,10 +114,10 @@ fi
   
 echo ""
 echo "Commands:"
-echo "Start Delion Service: ${yellow}systemctl start delion{NC}"
-echo "Check Delion Status Service: ${yellow}systemctl status delion{NC}"
-echo "Stop Delion Service: ${yellow}systemctl stop delion{NC}"
-echo "Check Masternode Status: ${yellow}delion-cli masternode status{NC}"
+echo "Start Delion Service: ${GREEN}systemctl start delion{NC}"
+echo "Check Delion Status Service: ${GREEN}systemctl status delion{NC}"
+echo "Stop Delion Service: ${GREEN}systemctl stop delion{NC}"
+echo "Check Masternode Status: ${GREEN}delion-cli masternode status{NC}"
 
 echo ""
 echo "Delion Masternode Installation Done"
