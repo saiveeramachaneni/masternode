@@ -72,10 +72,10 @@ then
   wget https://github.com/delioncoin/delioncore/releases/download/v1.0/Linux.zip
   unzip Linux.zip
   chmod +x delion*
+  rm delion-qt delion-tx Linux.zip
   sudo cp delion* /usr/local/bin
   mkdir -p delion
-  sudo cp delion* /root/delion
-  rm -rf Linux.zip
+  sudo mv delion-cli deliond /root/delion
 fi
 
  IP=$(curl -s4 api.ipify.org)
