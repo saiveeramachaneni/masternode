@@ -69,12 +69,12 @@ then
   sudo echo "/var/swap.img none swap sw 0 0" >> /etc/fstab
   cd
   
-  mkdir -p delion
   wget https://github.com/delioncoin/delioncore/releases/download/v1.0/Linux.zip
   unzip Linux.zip
   chmod +x delion*
+  sudo cp delion* /usr/local/bin
+  mkdir -p delion
   sudo cp delion* /root/delion
-  sudo mv delion* /usr/local/bin
   rm -rf Linux.zip
 fi
 
