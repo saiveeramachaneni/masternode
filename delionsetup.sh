@@ -49,7 +49,7 @@ EOF
 
 echo ""
 echo ""
-echo "{GREEN}Do you want to install all needed dependencies (no if you did it before)? [y/n]{NC}"
+echo "${GREEN}Do you want to install all needed dependencies (no if you did it before)? [y/n]${NC}"
 read DOSETUP
 
 if [ $DOSETUP = "y" ]  
