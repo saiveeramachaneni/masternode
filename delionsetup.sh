@@ -49,7 +49,7 @@ EOF
 
 echo ""
 echo ""
-echo "Do you want to install all needed dependencies (no if you did it before)? [y/n]"
+echo -e "${GREEN}Do you want to install all needed dependencies (no if you did it before)? [y/n]${NC}"
 read DOSETUP
 
 if [ $DOSETUP = "y" ]  
@@ -69,13 +69,14 @@ then
   sudo free
   sudo echo "/var/swap.img none swap sw 0 0" >> /etc/fstab
   cd
-
+  
+  mkdir -p delion
   wget https://github.com/delioncoin/delioncore/releases/download/v1.0/Linux.zip
   unzip Linux.zip
-  chmod +x Linux/*
-  sudo mv  Linux/* /usr/local/bin
+  chmod +x delion*
+  sudo cp delion* /root/delion
+  sudo mv delion* /usr/local/bin
   rm -rf Linux.zip
-  mv Linux delion
 fi
 
  IP=$(curl -s4 api.ipify.org)
@@ -112,13 +113,13 @@ fi
   
 echo ""
 echo "Commands:"
-echo "Start Delion Service: ${GREEN}systemctl start delion{NC}"
-echo "Check Delion Status Service: ${GREEN}systemctl status delion{NC}"
-echo "Stop Delion Service: ${GREEN}systemctl stop delion{NC}"
-echo "Check Masternode Status: ${GREEN}delion-cli masternode status{NC}"
+echo -e "Start Delion Service: ${GREEN}systemctl start delion${NC}"
+echo -e "Check Delion Status Service: ${GREEN}systemctl status delion${NC}"
+echo -e "Stop Delion Service: ${GREEN}systemctl stop delion${NC}"
+echo -e "Check Masternode Status: ${GREEN}delion-cli masternode status${NC}"
 
 echo ""
-echo "Delion Masternode Installation Done"
+echo -e "${GREEN}Delion Masternode Installation Done${NC}"
 exec bash
 exit
 
