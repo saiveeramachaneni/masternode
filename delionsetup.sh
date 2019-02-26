@@ -86,8 +86,6 @@ fi
  echo "Enter masternode private key"
  read PRIVKEY
  
- echo "Enter masternode private key for node $ALIAS"
- read PRIVKEY
  mkdir -p $CONF_DIR
   echo "rpcuser=user"`shuf -i 100000-10000000 -n 1` >> delion.conf_TEMP
   echo "rpcpassword=pass"`shuf -i 100000-10000000 -n 1` >> delion.conf_TEMP
