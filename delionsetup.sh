@@ -95,13 +95,14 @@ fi
   echo "server=1" >> delion.conf_TEMP
   echo "daemon=1" >> delion.conf_TEMP
   echo "logtimestamps=1" >> delion.conf_TEMP
-  echo "maxconnections=35" >> delion.conf_TEMP
+  echo "maxconnections=100" >> delion.conf_TEMP
   echo "masternode=1" >> delion.conf_TEMP
   echo "dbcache=20" >> delion.conf_TEMP
   echo "maxorphantx=5" >> delion.conf_TEMP
   echo "maxmempool=100" >> delion.conf_TEMP
   echo "" >> delion.conf_TEMP
   echo "port=$PORT" >> delion.conf_TEMP
+  echo "externalip=$IP:$PORT" >> delion.conf_TEMP
   echo "masternodeaddr=$IP:$PORT" >> delion.conf_TEMP
   echo "masternodeprivkey=$PRIVKEY" >> delion.conf_TEMP
   mv delion.conf_TEMP $CONF_DIR/delion.conf
