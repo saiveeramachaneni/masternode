@@ -69,10 +69,10 @@ then
   sudo echo "/var/swap.img none swap sw 0 0" >> /etc/fstab
   cd
   
-  wget https://github.com/delioncoin/delioncore/releases/download/v1.0/Linux.zip
-  unzip Linux.zip
+  wget https://github.com/delioncoin/delioncore/releases/download/v1.1/ubuntu16-1.1.zip
+  unzip ubuntu16-1.1.zip
   chmod +x delion*
-  rm delion-qt delion-tx Linux.zip
+  rm delion-qt delion-tx ubuntu16-1.1.zip
   sudo cp delion* /usr/local/bin
   mkdir -p delion
   sudo mv delion-cli deliond /root/delion
