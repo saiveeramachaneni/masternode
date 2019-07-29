@@ -5,7 +5,7 @@
 1. Open your Windows wallet - MAKE SURE IT IS SYNCED WITH THE NETWORK
 2. Go to Tools -> Debug Console
 3. Type: getaccountaddress MN# (# is your masternode number you want to use. Example: MN1)
-4. Send 5000 DLN to this address
+4. Send 100000 DLN to this address
 5. Go to Tools -> Debug Console
 6. Type: masternode outputs (This can take a minute before an output is shown)
 7. Type: masternode genkey
