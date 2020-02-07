@@ -40,8 +40,8 @@ then
 
  wget https://github.com/mrhappy2018/cottoncoin/releases/download/v1.6.0.0/v1.6.0.0--Linux.zip
   unzip v1.6.0.0--Linux.zip
-  chmod +x Linux/bin/*
-  sudo mv  Linux/bin/* /usr/local/bin
+  chmod +x v1.6.0.0--Linux/bin/*
+  sudo mv v1.6.0.0--Linux/bin/* /usr/local/bin
   rm -rf v1.6.0.0--Linux.zip Windows Linux Mac
 
   sudo apt-get install -y ufw
