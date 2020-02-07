@@ -2,7 +2,7 @@
 
 cd ~
 echo "****************************************************************************"
-echo "* Ubuntu Server is the recommended operating system for this install.       *"
+echo "* Ubuntu 16.04 is the recommended operating system for this install.       *"
 echo "*                                                                          *"
 echo "* This script will install and configure your Cotton Coin  masternodes.    *"
 echo "*                                                                          *"
@@ -38,11 +38,11 @@ then
   sudo echo "/var/swap.img none swap sw 0 0" >> /etc/fstab
   cd
 
-  wget https://github.com/mrhappy2018/cottoncoin/releases/download/v1.6.0.0/v1.6.0.0--Linux.zip
-  unzip -d Linux Linux.zip 
-  chmod +x Linux/*
-  sudo mv  Linux/* /usr/local/bin
-  rm -rf Linux.zip Linux
+ wget https://github.com/mrhappy2018/cottoncoin/releases/download/v1.6.0.0/v1.6.0.0--Linux.zip
+  unzip v1.6.0.0--Linux.zip
+  chmod +x Linux/bin/*
+  sudo mv  Linux/bin/* /usr/local/bin
+  rm -rf v1.6.0.0--Linux.zip Windows Linux Mac
 
   sudo apt-get install -y ufw
   sudo ufw allow ssh/tcp
@@ -121,4 +121,3 @@ fi
  echo -e "MASTERNODE PRIVATEKEY is: $PRIVKEY"
  echo -e "================================================================================================================================"  
     
-
