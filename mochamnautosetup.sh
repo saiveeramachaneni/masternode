@@ -4,7 +4,7 @@ VERSION="1.00"
 LOGFILENAME="mochamnsetup.log"
 
 # WALLET(DAEMON) LINKS
-UNIWALLETLINK="https://github.com/mochachain-project/MOCHA-Core/releases/download/1.0.0.0/mochachain-1.0.0.0-x64-linux.tar.gz" 	#universal version, leave it empty if not supported
+UNIWALLETLINK="https://github.com/mochachain-project/MOCHA-Core/releases/download/1.0.0.1/linux-binaries-1.0.0.1.tar.gz" 	#universal version, leave it empty if not supported
 
 #
 BLOCKDUMPLINK="" 																	#link blockchain cache/bootstrap
